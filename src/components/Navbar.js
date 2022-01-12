@@ -12,7 +12,7 @@ const Navibar = () => {
         <>
             <Navbar sticky='top' bg="dark" variant="dark" expand={false}>
                 <Container fluid>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="Accueil">
                         <img
                             alt=""
                             src={rsburger}
@@ -27,15 +27,15 @@ const Navibar = () => {
                         aria-labelledby="offcanvasNavbarLabel"
                         placement="end"
                     >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
+                        <Offcanvas.Header style={{ backgroundColor: "black" }} closeButton closeVariant='white'>
+                            <Offcanvas.Title style={{ color: "white" }} id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
                         </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            <Nav variant='dark' bg="dark" className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Accueil</Nav.Link>
-                                <Nav.Link href="#action2">Restaurant</Nav.Link>
-                                <Nav.Link href="#action2">Carte</Nav.Link>
-                                <Nav.Link href="#action2">Commander</Nav.Link>
+                        <Offcanvas.Body style={{ backgroundColor: "black" }}>
+                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                                <Nav.Link style={{ color: "white" }} href="Accueil">Accueil</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="Restaurant">Restaurant</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="Carte">Carte</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="Commander">Commander</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
