@@ -38,3 +38,17 @@
     transform: rotate(360deg);
   }
 }
+
+.titreCarousel {
+  font-weight: bold;
+  bottom: 25%;
+  padding: 1.75em 0;
+  border-radius: 25%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.25) 25%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

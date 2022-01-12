@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Card, Container, Row, Col } from 'react-bootstrap'
+import "../styles/App.scss";
 import indien from '../assets/indien.jpg'
 import chicken from '../assets/chicken.jpg'
 import espagnol from '../assets/espagnol.jpg'
@@ -25,7 +26,7 @@ class Accueil extends React.Component {
               transform: "translateY(-50%)",
               bottom: "initial"
             }}>
-              <h3>Venez déguster nos excellents burgers</h3>
+              <h1 className="titreCarousel">Venez déguster nos excellents burgers</h1>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -40,7 +41,7 @@ class Accueil extends React.Component {
               transform: "translateY(-50%)",
               bottom: "initial"
             }}>
-              <h3>100 % frais, pain boulanger et frites maison</h3>
+              <h1 className="titreCarousel">100 % frais, pain boulanger et frites maison</h1>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -55,7 +56,7 @@ class Accueil extends React.Component {
               transform: "translateY(-50%)",
               bottom: "initial"
             }}>
-              <h3>On vous garantit les meilleurs ingrédients</h3>
+              <h1 className="titreCarousel">On vous garantit les meilleurs ingrédients</h1>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
