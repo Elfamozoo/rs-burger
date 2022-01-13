@@ -62,28 +62,24 @@ class Accueil extends React.Component {
           </Carousel.Item>
         </Carousel>
         <Row xs={1} md={2} className="g-4">
-          <Col>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>Le burger du moment</Card.Title>
-                <Card.Text style={{ textAlign: "center" }}>
-                  Le normand
-                </Card.Text>
-              </Card.Body>
-              <Card.Img variant="top" src={normand} />
-            </Card>
-          </Col>
-          <Col>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title >Le préféré des Clients</Card.Title>
-                <Card.Text >
-                  Le montagnard
-                </Card.Text>
-              </Card.Body>
-              <Card.Img variant="top" src={montagnard} />
-            </Card>
-          </Col>
+          <Card className="text-center">
+            <Card.Body>
+              <Card.Title style={{ textAlign: "center" }}>Le burger du moment</Card.Title>
+              <Card.Text style={{ textAlign: "center" }}>
+                Le normand
+              </Card.Text>
+            </Card.Body>
+            <Card.Img src={normand} />
+          </Card>
+          <Card className="text-center">
+            <Card.Body>
+              <Card.Title >Le préféré des Clients</Card.Title>
+              <Card.Text >
+                Le montagnard
+              </Card.Text>
+            </Card.Body>
+            <Card.Img src={montagnard} />
+          </Card>
         </Row>
       </>
     );
