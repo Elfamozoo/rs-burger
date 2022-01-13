@@ -18,6 +18,7 @@ class Accueil extends React.Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
+              style={{}}
               src={indien}
               alt="First slide"
             />
@@ -60,28 +61,30 @@ class Accueil extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <Container>
-          <Row xs={1} md={2} xl={6} className="g-4">
-            <Card style={{ width: '40rem' }}>
-              <Card.Img variant="top" src={normand} />
+        <Row xs={1} md={2} className="g-4">
+          <Col>
+            <Card className="text-center">
               <Card.Body>
                 <Card.Title style={{ textAlign: "center" }}>Le burger du moment</Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   Le normand
                 </Card.Text>
               </Card.Body>
+              <Card.Img variant="top" src={normand} />
             </Card>
-            <Card style={{ width: '40rem' }}>
-              <Card.Img variant="top" src={montagnard} />
+          </Col>
+          <Col>
+            <Card className="text-center">
               <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>Le préféré des Clients</Card.Title>
-                <Card.Text style={{ textAlign: "center" }}>
+                <Card.Title >Le préféré des Clients</Card.Title>
+                <Card.Text >
                   Le montagnard
                 </Card.Text>
               </Card.Body>
+              <Card.Img variant="top" src={montagnard} />
             </Card>
-          </Row>
-        </Container>
+          </Col>
+        </Row>
       </>
     );
 
