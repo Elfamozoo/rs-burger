@@ -35,7 +35,7 @@ const Navibar = () => {
                                 <Nav.Link style={{ color: "white" }} href="/">Accueil</Nav.Link>
                                 <Nav.Link style={{ color: "white" }} href="restaurant">Restaurant</Nav.Link>
                                 <Nav.Link style={{ color: "white" }} href="carte">Carte</Nav.Link>
-                                <Nav.Link style={{ color: "white" }} href="commander">Commander</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="https://www.just-eat.fr/menu/rs-burger">Commander</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

@@ -1,10 +1,12 @@
 import React from 'react';
-import {
-    Card, Container, Row, Col
-} from 'react-bootstrap'
+import "../styles/Restaurant.scss";
+import { Card, Container, Row, Col, Image } from 'react-bootstrap'
 import PrettyRating from "pretty-rating-react";
 import { faStar, faStarHalfAlt, } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
+import google from '../assets/logo-google.png'
+import justeat from '../assets/Just-Eat-Logo.png'
+
 
 const icons = {
     star: {
@@ -23,13 +25,20 @@ class Restaurant extends React.Component {
         return (
             <>
                 <Container>
-                    <div>
-                        <h1>Google</h1>
-                        <PrettyRating value={4.5} icons={icons.star} colors={color.star} />
-                        <a href='https://urlz.fr/h8la'>+40 avis</a>
-                    </div>
-
-
+                    <Row xs={1} md={2}>
+                        <Col>
+                            <Image style={{ maxHeight: "45px" }} fluid src={google}></Image>
+                            <h3>Google</h3>
+                            <PrettyRating value={4.5} icons={icons.star} colors={color.star} />
+                            <a href='https://urlz.fr/h8la'>+40 avis</a>
+                        </Col>
+                        <Col>
+                            <Image style={{ maxHeight: "45px" }} fluid src={justeat}></Image>
+                            <h3>Just Eat</h3>
+                            <PrettyRating value={4.7} icons={icons.star} colors={color.star} />
+                            <a href='https://www.just-eat.fr/menu/rs-burger#avis'>+110 avis</a>
+                        </Col>
+                    </Row>
 
 
 

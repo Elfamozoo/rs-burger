@@ -1,8 +1,28 @@
-body {
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../assets/roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../assets/roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../assets/roboto/RobotoCondensed-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+body,
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "RobotoCondensed", -apple-system, BlinkMacSystemFont, "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
