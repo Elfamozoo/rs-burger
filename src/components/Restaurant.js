@@ -26,20 +26,19 @@ class Restaurant extends React.Component {
             <>
                 <Container>
                     <Row xs={1} md={2}>
-                        <Col>
+                        <Col className="text-center">
                             <Image style={{ maxHeight: "45px" }} fluid src={google}></Image>
                             <h3>Google</h3>
                             <PrettyRating value={4.5} icons={icons.star} colors={color.star} />
                             <a href='https://urlz.fr/h8la'>+40 avis</a>
                         </Col>
-                        <Col>
+                        <Col className="text-center">
                             <Image style={{ maxHeight: "45px" }} fluid src={justeat}></Image>
                             <h3>Just Eat</h3>
                             <PrettyRating value={4.7} icons={icons.star} colors={color.star} />
                             <a href='https://www.just-eat.fr/menu/rs-burger#avis'>+110 avis</a>
                         </Col>
                     </Row>
-
 
 
                     <div className="google-map">

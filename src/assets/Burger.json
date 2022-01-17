@@ -1,0 +1,122 @@
+[
+  {
+    "Nom": "Big burger",
+    "Ingredients": "Steak, cheddar, galette pommes de terre, 2 bacons et sauce algérienne",
+    "Sauce": "",
+    "Prix": "7,40 €"
+  },
+  {
+    "Nom": "Hot beef burger",
+    "Ingredients": "3 steaks, cheddar, emmental, salade et oignons rouges",
+    "Sauce": "",
+    "Prix": "7,40 €"
+  },
+  {
+    "Nom": "Mix burger",
+    "Ingredients": "2 steaks, poulet pané, cheddar, salade et sauce poivre",
+    "Sauce": "",
+    "Prix": "7,40 €"
+  },
+  {
+    "Nom": "Deli pepper burger",
+    "Ingredients": "2 steaks, cordon bleu, cheddar, salade et sauce andalouse",
+    "Sauce": "",
+    "Prix": "5,80 €"
+  },
+  {
+    "Nom": "Boursin burger",
+    "Ingredients": "2 steaks, fromage Boursin, cheddar et bacon",
+    "Sauce": "",
+    "Prix": "5,40 €"
+  },
+  {
+    "Nom": "Suisse cheeseburger",
+    "Ingredients": "2 steaks, fromage raclette, cheddar, salade et sauce biggy",
+    "Sauce": "",
+    "Prix": "5,40 €"
+  },
+  {
+    "Nom": "Chicken burger",
+    "Ingredients": "Poulet pané, cheddar, galette pommes de terre, bacon et sauce samouraï",
+    "Sauce": "",
+    "Prix": "5,40 €"
+  },
+  {
+    "Nom": "Crunchi burger",
+    "Ingredients": "Steak, cheddar, salade et sauce biggy",
+    "Sauce": "",
+    "Prix": "5,40 €"
+  },
+  {
+    "Nom": "Oriental burger",
+    "Ingredients": "Kefta, cheddar, emmental, oignons et sauce samouraï",
+    "Sauce": "",
+    "Prix": "5,40 €"
+  },
+  {
+    "Nom": "Steak house burger",
+    "Ingredients": "Steak, bacon, oignons frits, cheddar et sauce barbecue",
+    "Sauce": "",
+    "Prix": "4,80 €"
+  },
+  {
+    "Nom": "Double pepper burger",
+    "Ingredients": "2 steaks, bacon, salade, tomates et sauce poivre",
+    "Sauce": "",
+    "Prix": "5,50 €"
+  },
+  {
+    "Nom": "Hamburger",
+    "Ingredients": "Steak, cornichons, oignons et ketchup/moutarde",
+    "Sauce": "",
+    "Prix": "1,50 €"
+  },
+  {
+    "Nom": "King corner burger",
+    "Ingredients": "3 steaks, 3 cheddar, tomates, salade et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "6,50 €"
+  },
+  {
+    "Nom": "Authentique burger",
+    "Ingredients": "1 pain en plus, 2 steaks, cheddar, salade et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "4,00 €"
+  },
+  {
+    "Nom": "Crusty beef burger",
+    "Ingredients": "Steak, cheddar, galette de pommes de terre, tomates et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "4,90 €"
+  },
+  {
+    "Nom": "Chicken bacon burger",
+    "Ingredients": "Poulet pané, cheddar, bacon, salade et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "4,90 €"
+  },
+  {
+    "Nom": "Cheeseburger",
+    "Ingredients": "Steak, cheddar, cornichons, oignons et ketchup/moutarde",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "2,00 €"
+  },
+  {
+    "Nom": "Double cheeseburger",
+    "Ingredients": "2 steaks, cheddar, cornichons, oignons et ketchup/moutarde",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "2,50 €"
+  },
+  {
+    "Nom": "Chicken wrap",
+    "Ingredients": "Tortilla, poulet pané, salade, tomates et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "4,90 €"
+  },
+  {
+    "Nom": "Crusty chicken burger",
+    "Ingredients": "Poulet pané, cheddar, galette de pommes de terre, tomates et sauce au choix",
+    "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
+    "Prix": "4,90 €"
+  }
+]
