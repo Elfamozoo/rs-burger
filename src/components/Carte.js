@@ -1,17 +1,38 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-
+import { Card, Container, Row, Button, Col } from 'react-bootstrap'
+import data from '../data/menu-burger.json'
 
 
 class Carte extends React.Component {
-    state = {}
     render() {
         return (
             <>
-            
+                <Container>
+                    <Row xs={1} md={2} className="g-4">
+                        {data.map((products) =>
+
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src={products.Image} />
+                                <Card.Body>
+                                    <Card.Title>{products.Nom}</Card.Title>
+                                    <Card.Text>
+                                        {products.Ingredients}
+                                    </Card.Text>
+                                    <Card.Text>
+                                        {products.Prix}
+                                    </Card.Text>
+                                    <Button variant="primary">Voir details</Button>
+                                </Card.Body>
+                            </Card>
+
+                        )}
+                    </Row>
+                </Container>
             </>
         )
     }
 }
 
 export default Carte;
+
+
