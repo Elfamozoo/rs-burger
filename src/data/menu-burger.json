@@ -4,118 +4,135 @@
     "Ingredients": "Steak, cheddar, galette pommes de terre, 2 bacons, sauce algérienne, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "8,90 €"
+    "Prix": "8,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu hot beef burger",
     "Ingredients": "3 steaks, cheddar, emmental, salade, oignons rouges, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "8,90 €"
+    "Prix": "8,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu mix burger",
     "Ingredients": "2 steaks, poulet pané, cheddar, salade, sauce poivre, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "8,90 €"
+    "Prix": "8,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu deli pepper burger",
     "Ingredients": "2 steaks, cordon bleu, cheddar, salade, sauce andalouse, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "7,30 €"
+    "Prix": "7,30 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu boursin burger",
     "Ingredients": "2 steaks, fromage Boursin, cheddar, bacon, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu suisse cheeseburger",
     "Ingredients": "2 steaks, fromage raclette, cheddar, salade, sauce biggy, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu chicken burger",
     "Ingredients": "Poulet pané, cheddar, galette pommes de terre, bacon, sauce samouraï, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu crunchi burger",
     "Ingredients": "Steak, cheddar, salade, sauce biggy, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu oriental burger",
     "Ingredients": "Kefta, cheddar, emmental, oignons, sauce samouraï, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu steak house burger",
     "Ingredients": "Steak, bacon, oignons frits, cheddar, sauce barbecue, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "6,80 €"
+    "Prix": "6,80 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu double pepper burger",
     "Ingredients": "2 steaks, bacon, salade, tomates, sauce poivre, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "",
-    "Prix": "7,50 €"
+    "Prix": "7,50 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu king corner burger",
     "Ingredients": "3 steaks, 3 cheddar, tomates, salade, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "8,50 €"
+    "Prix": "8,50 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu authentique burger",
     "Ingredients": "1 pain en plus, 2 steaks, cheddar, salade, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "6,00 €"
+    "Prix": "6,00 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu crusty beef burger",
     "Ingredients": "Steak, cheddar, galette de pommes de terre, tomates, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu chicken bacon burger",
     "Ingredients": "Poulet pané, cheddar, bacon, salade, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu chicken wrap",
     "Ingredients": "Tortilla, poulet pané, salade, tomates, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   },
   {
     "Nom": "Menu crusty chicken burger",
     "Ingredients": "Poulet pané, cheddar, galette de pommes de terre, tomates, sauce au choix, 1 portion de frites et 1 boisson 33cl",
     "Boissons": "Coca-Cola 33cl, Coca-Cola zero sucres 33cl, Coca-Cola light 33cl, Fanta Orange 33cl, Sprite Citron-Citron vert 33cl et plus",
     "Sauce": "Sans Sauce, Sauce Mayonnaise, Sauce Ketchup, Sauce Blanche, Sauce Samouraï et plus",
-    "Prix": "6,90 €"
+    "Prix": "6,90 €",
+    "Image": "https://burgerstreetcaen.fr/storage/app/media/burgers/montagnard.jpg"
   }
 ]

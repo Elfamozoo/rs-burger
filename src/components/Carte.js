@@ -8,10 +8,7 @@ class Carte extends React.Component {
     render() {
         return (
             <>
-                <Container>
-
-
-                </Container>
+            
             </>
         )
     }
