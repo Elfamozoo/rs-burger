@@ -3,9 +3,7 @@ import { Card, Container, Row, Button, Col, Nav } from 'react-bootstrap'
 import menu from '../data/menu-burger.json'
 import burger from '../data/Burger.json'
 import desserts from '../data/accompagnements.json'
-import banmenu from '../assets/banniere_menu.png'
-import banburger from '../assets/banniere_burger.png'
-import banaccom from '../assets/banniere_accom.png'
+import ScrollTop from "react-scrolltop-button";
 
 
 class Carte extends React.Component {
@@ -14,20 +12,20 @@ class Carte extends React.Component {
             <>
                 <Container>
                     <Row xs={1} md={2}>
-                        <Nav fill variant="tabs" defaultActiveKey="/home">
+                        <Nav fill defaultActiveKey="link-1">
                             <Nav.Item>
-                                <Nav.Link eventKey="link-1" >Menus burgers/wraps</Nav.Link>
+                                <Nav.Link href='#menu' eventKey="link-1" >Menus burgers/wraps</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-2">Burger/Wraps</Nav.Link>
+                                <Nav.Link href='#burger' eventKey="link-2">Burger/Wraps</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="link-3" >Accompagnements</Nav.Link>
+                                <Nav.Link href='#accom' eventKey="link-3" >Accompagnements</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Row>
                     <Row xs={1} md={2}>
-                        <Card.Body>
+                        <Card.Body id='menu'>
                             <Card.Title>
                                 Menus burgers / wraps
                             </Card.Title>
@@ -54,12 +52,11 @@ class Carte extends React.Component {
                     </Row>
                     <Row xs={1} md={2} className="g-0">
 
-                        <Card.Body>
+                        <Card.Body id='burger'>
                             <Card.Title>
-                                Burger / Wraps
+                                Burgers / Wraps
                             </Card.Title>
                         </Card.Body>
-
                     </Row>
                     <Row xs={1} md={2} className="g-4">
                         {burger.map((products) =>
@@ -81,7 +78,7 @@ class Carte extends React.Component {
                         )}
                     </Row>
                     <Row xs={1} md={2} className="g-0 w-100">
-                        <Card.Body>
+                        <Card.Body id='accom'>
                             <Card.Title>
                                 Accompagnements
                             </Card.Title>
@@ -106,6 +103,7 @@ class Carte extends React.Component {
                             </Col>
                         )}
                     </Row>
+                    <ScrollTop breakpoint="5000"/>
                 </Container>
             </>
         )
