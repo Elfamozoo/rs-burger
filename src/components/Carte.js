@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Container, Row, Button, Col, Nav } from 'react-bootstrap'
+import { Card, CardGroup, Container, Row, Button, Col, Nav } from 'react-bootstrap'
+import "../styles/Carte.scss";
 import menu from '../data/menu-burger.json'
 import burger from '../data/Burger.json'
 import desserts from '../data/accompagnements.json'
@@ -11,7 +12,7 @@ class Carte extends React.Component {
         return (
             <>
                 <Container>
-                    <Row xs={1} md={2}>
+                    <Row xs={1} md={1}>
                         <Nav fill defaultActiveKey="link-1">
                             <Nav.Item>
                                 <Nav.Link href='#menu' eventKey="link-1" >Menus burgers/wraps</Nav.Link>
@@ -24,17 +25,17 @@ class Carte extends React.Component {
                             </Nav.Item>
                         </Nav>
                     </Row>
-                    <Row xs={1} md={2}>
+                    <Row xs={1} md={3}>
                         <Card.Body id='menu'>
                             <Card.Title>
                                 Menus burgers / wraps
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={2} className="g-4">
+                    <Row xs={1} md={1} lg={3} className="g-4">
                         {menu.map((products) =>
-                            <Col xl={3}>
-                                <Card>
+                            <CardGroup>
+                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title>{products.Nom}</Card.Title>
@@ -47,21 +48,20 @@ class Carte extends React.Component {
                                         <Button variant="dark">Voir details</Button>
                                     </Card.Body>
                                 </Card>
-                            </Col>
+                            </CardGroup>
                         )}
                     </Row>
-                    <Row xs={1} md={2} className="g-0">
-
+                    <Row xs={1} md={3} className="g-0">
                         <Card.Body id='burger'>
                             <Card.Title>
                                 Burgers / Wraps
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={2} className="g-4">
+                    <Row xs={1} md={1} lg={3} className="g-4">
                         {burger.map((products) =>
-                            <Col xl={3}>
-                                <Card>
+                            <CardGroup>
+                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title>{products.Nom}</Card.Title>
@@ -74,20 +74,20 @@ class Carte extends React.Component {
                                         <Button variant="dark">Voir details</Button>
                                     </Card.Body>
                                 </Card>
-                            </Col>
+                            </CardGroup>
                         )}
                     </Row>
-                    <Row xs={1} md={2} className="g-0 w-100">
+                    <Row xs={1} md={3} className="g-0">
                         <Card.Body id='accom'>
                             <Card.Title>
                                 Accompagnements
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={2} className="g-4">
+                    <Row xs={1} md={1} lg={3} className="g-4">
                         {desserts.map((products) =>
-                            <Col xl={3}>
-                                <Card>
+                            <CardGroup>
+                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title>{products.Nom}</Card.Title>
@@ -100,10 +100,11 @@ class Carte extends React.Component {
                                         <Button variant="dark">Voir details</Button>
                                     </Card.Body>
                                 </Card>
-                            </Col>
+                            </CardGroup>
+
                         )}
                     </Row>
-                    <ScrollTop breakpoint="5000"/>
+                    <ScrollTop breakpoint="5000" />
                 </Container>
             </>
         )
