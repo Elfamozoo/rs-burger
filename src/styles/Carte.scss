@@ -2,8 +2,12 @@
   text-decoration: none !important;
   color: black !important;
   cursor: "pointer";
+}
 
-  .default-link:hover {
-    box-shadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px";
-  }
+.default-card {
+  height: 28rem;
+}
+
+.default-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

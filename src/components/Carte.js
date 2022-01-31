@@ -33,11 +33,11 @@ class Carte extends React.Component {
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={1} lg={3} className="g-4">
+                    <Row xs={1} md={2} lg={3} className="g-4">
                         {menu.map((products) =>
-                            <Link className='default-link' to="/restaurant">
+                            <Link className='default-link' to="/details">
                                 <CardGroup>
-                                    <Card style={{ height: "28rem" }}>
+                                    <Card className='default-card'>
                                         <Card.Img variant="top" src={products.Image} />
                                         <Card.Body>
                                             <Card.Title>{products.Nom}</Card.Title>
@@ -60,11 +60,11 @@ class Carte extends React.Component {
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={1} lg={3} className="g-4">
+                    <Row xs={1} md={2} lg={3} className="g-4">
                         {burger.map((products) =>
-                            <Link className='default-link' to="/restaurant">
+                            <Link className='default-link' to="/details">
                                 <CardGroup>
-                                    <Card style={{ height: "28rem" }}>
+                                    <Card className='default-card' >
                                         <Card.Img variant="top" src={products.Image} />
                                         <Card.Body>
                                             <Card.Title>{products.Nom}</Card.Title>
@@ -87,11 +87,11 @@ class Carte extends React.Component {
                             </Card.Title>
                         </Card.Body>
                     </Row>
-                    <Row xs={1} md={1} lg={3} className="g-4">
+                    <Row xs={1} md={2} lg={3} className="g-4">
                         {desserts.map((products) =>
-                            <Link className='default-link' to="/restaurant">
+                            <Link className='default-link' to="/details">
                                 <CardGroup>
-                                    <Card style={{ height: "28rem" }}>
+                                    <Card className='default-card'>
                                         <Card.Img variant="top" src={products.Image} />
                                         <Card.Body>
                                             <Card.Title>{products.Nom}</Card.Title>
