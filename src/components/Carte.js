@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardGroup, Container, Row, Button, Col, Nav } from 'react-bootstrap'
 import "../styles/Carte.scss";
 import menu from '../data/menu-burger.json'
@@ -34,21 +35,22 @@ class Carte extends React.Component {
                     </Row>
                     <Row xs={1} md={1} lg={3} className="g-4">
                         {menu.map((products) =>
-                            <CardGroup>
-                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
-                                    <Card.Img variant="top" src={products.Image} />
-                                    <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
-                                            {products.Ingredients}
-                                        </Card.Text>
-                                        <Card.Text>
+                            <Link className='default-link' to="/restaurant">
+                                <CardGroup>
+                                    <Card style={{ height: "28rem" }}>
+                                        <Card.Img variant="top" src={products.Image} />
+                                        <Card.Body>
+                                            <Card.Title>{products.Nom}</Card.Title>
+                                            <Card.Text>
+                                                {products.Ingredients}
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
                                             {products.Prix}
-                                        </Card.Text>
-                                        <Button variant="dark">Voir details</Button>
-                                    </Card.Body>
-                                </Card>
-                            </CardGroup>
+                                        </Card.Footer>
+                                    </Card>
+                                </CardGroup>
+                            </Link>
                         )}
                     </Row>
                     <Row xs={1} md={3} className="g-0">
@@ -60,21 +62,22 @@ class Carte extends React.Component {
                     </Row>
                     <Row xs={1} md={1} lg={3} className="g-4">
                         {burger.map((products) =>
-                            <CardGroup>
-                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
-                                    <Card.Img variant="top" src={products.Image} />
-                                    <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
-                                            {products.Ingredients}
-                                        </Card.Text>
-                                        <Card.Text>
+                            <Link className='default-link' to="/restaurant">
+                                <CardGroup>
+                                    <Card style={{ height: "28rem" }}>
+                                        <Card.Img variant="top" src={products.Image} />
+                                        <Card.Body>
+                                            <Card.Title>{products.Nom}</Card.Title>
+                                            <Card.Text>
+                                                {products.Ingredients}
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
                                             {products.Prix}
-                                        </Card.Text>
-                                        <Button variant="dark">Voir details</Button>
-                                    </Card.Body>
-                                </Card>
-                            </CardGroup>
+                                        </Card.Footer>
+                                    </Card>
+                                </CardGroup>
+                            </Link>
                         )}
                     </Row>
                     <Row xs={1} md={3} className="g-0">
@@ -86,21 +89,22 @@ class Carte extends React.Component {
                     </Row>
                     <Row xs={1} md={1} lg={3} className="g-4">
                         {desserts.map((products) =>
-                            <CardGroup>
-                                <Card style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}>
-                                    <Card.Img variant="top" src={products.Image} />
-                                    <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
-                                            {products.Ingredients}
-                                        </Card.Text>
-                                        <Card.Text>
+                            <Link className='default-link' to="/restaurant">
+                                <CardGroup>
+                                    <Card style={{ height: "28rem" }}>
+                                        <Card.Img variant="top" src={products.Image} />
+                                        <Card.Body>
+                                            <Card.Title>{products.Nom}</Card.Title>
+                                            <Card.Text>
+                                                {products.Ingredients}
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
                                             {products.Prix}
-                                        </Card.Text>
-                                        <Button variant="dark">Voir details</Button>
-                                    </Card.Body>
-                                </Card>
-                            </CardGroup>
+                                        </Card.Footer>
+                                    </Card>
+                                </CardGroup>
+                            </Link>
 
                         )}
                     </Row>
