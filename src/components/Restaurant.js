@@ -25,6 +25,8 @@ class Restaurant extends React.Component {
         return (
             <>
                 <Container>
+                    <h1 className='descriptionH1'>Fait partie des <strong>restaurants</strong> de <strong>burgers</strong> les mieux noté sur <strong>internet</strong> !</h1>
+
                     <Row xs={1} md={2}>
                         <Col className="text-center">
                             <Image style={{ maxHeight: "45px" }} fluid src={google}></Image>
@@ -39,6 +41,11 @@ class Restaurant extends React.Component {
                             <a href='https://www.just-eat.fr/menu/rs-burger#avis'>+110 avis</a>
                         </Col>
                     </Row>
+
+                    <h1 className='descriptionH1'>Notre <strong>restaurant</strong> de <strong>burgers</strong> à <strong>Faches-Thumesnil</strong></h1>
+                    <h2 className='descriptionH2'>36 rue Ferrer, 59155 Faches-Thumesnil</h2>
+                    <p className='descriptionP'>Venez déguster nos excellents burgers !
+                        Dans un cadre très décontracté...</p>
 
 
                     <div className="google-map">
