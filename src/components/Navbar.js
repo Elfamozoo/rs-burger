@@ -33,8 +33,8 @@ const Navibar = () => {
                         <Offcanvas.Body style={{ backgroundColor: "black" }}>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link style={{ color: "white" }} href="/">Accueil</Nav.Link>
-                                <Nav.Link style={{ color: "white" }} href="restaurant">Restaurant</Nav.Link>
-                                <Nav.Link style={{ color: "white" }} href="carte">Carte</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="/restaurant">Restaurant</Nav.Link>
+                                <Nav.Link style={{ color: "white" }} href="/carte">Carte</Nav.Link>
                                 <Nav.Link style={{ color: "white" }} href="https://www.just-eat.fr/menu/rs-burger">Commander</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>

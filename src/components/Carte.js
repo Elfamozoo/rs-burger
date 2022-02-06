@@ -9,6 +9,7 @@ import ScrollTop from "react-scrolltop-button";
 
 
 class Carte extends React.Component {
+
     render() {
         return (
             <>
@@ -89,7 +90,7 @@ class Carte extends React.Component {
                     </Row>
                     <Row xs={1} md={2} lg={3} className="g-4">
                         {desserts.map((products) =>
-                            <Link className='default-link' to={`/accompagnements/menus/${products.Id}`}>
+                            <Link className='default-link' to={`/details/accompagnements/${products.Id}`}>
                                 <CardGroup>
                                     <Card className='default-card'>
                                         <Card.Img variant="top" src={products.Image} />

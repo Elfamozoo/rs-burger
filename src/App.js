@@ -5,7 +5,7 @@ import Accueil from './components/Accueil';
 import Navibar from "./components/Navbar";
 import Restaurant from './components/Restaurant';
 import Carte from './components/Carte';
-import Details from './components/Details';
+import Details from "./components/Details";
 
 
 
