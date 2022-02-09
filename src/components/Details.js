@@ -1,6 +1,7 @@
 import React from 'react';
+import "../styles/Details.scss";
 import { useParams } from "react-router"
-import { Card, CardGroup, Container, Row, Button, Col } from 'react-bootstrap'
+import { Card, CardGroup, Container, Row, Button, Col, Image } from 'react-bootstrap'
 import menu from '../data/menu-burger.json'
 import burger from '../data/Burger.json'
 import desserts from '../data/accompagnements.json'
@@ -17,20 +18,30 @@ const Details = () => {
         const menuProducts = menu.find(getProductsById)
         return (
             <>
-                <CardGroup>
-                    <Card className='default-card'>
-                        <Card.Img variant="top" src={menuProducts.Image} />
-                        <Card.Body>
-                            <Card.Title>{menuProducts.Nom}</Card.Title>
-                            <Card.Text>
-                                {menuProducts.Ingredients}
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            {menuProducts.Prix}
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Image className='img-details' fluid src={menuProducts.Image} />
+                        </Col>
+                        <Col>
+                            <Card.Body className='text-details'>
+                                <Card.Title>{menuProducts.Nom}</Card.Title>
+                                <Card.Text>
+                                    Composition : {menuProducts.Ingredients}
+                                </Card.Text>
+                                <Card.Text>
+                                    Boissons : {menuProducts.Boissons}
+                                </Card.Text>
+                                <Card.Text>
+                                    {menuProducts.Sauce && <span>Sauces : {menuProducts.Sauce} </span>}
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                Prix : {menuProducts.Prix}
+                            </Card.Footer>
+                        </Col>
+                    </Row>
+                </Container>
             </>
         )
 
@@ -38,21 +49,30 @@ const Details = () => {
         const burgersProducts = burger.find(getProductsById)
         return (
             <>
-                <CardGroup>
-                    <Card className='default-card'>
-                        <Card.Img variant="top" src={burgersProducts.Image} />
-                        <Card.Body>
-                            <Card.Title>{burgersProducts.Nom}</Card.Title>
-                            <Card.Text>
-                                {burgersProducts.Ingredients}
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            {burgersProducts.Prix}
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
-
+                <Container>
+                    <Row>
+                        <Col>
+                            <Image className='img-details' fluid src={burgersProducts.Image} />
+                        </Col>
+                        <Col>
+                            <Card.Body className='text-details'>
+                                <Card.Title>{burgersProducts.Nom}</Card.Title>
+                                <Card.Text>
+                                    Composition : {burgersProducts.Ingredients}
+                                </Card.Text>
+                                <Card.Text>
+                                    Boissons : {burgersProducts.Boissons}
+                                </Card.Text>
+                                <Card.Text>
+                                    {burgersProducts.Sauce && <span>Sauces : {burgersProducts.Sauce} </span>}
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                Prix : {burgersProducts.Prix}
+                            </Card.Footer>
+                        </Col>
+                    </Row>
+                </Container>
             </>
         )
 
@@ -60,18 +80,21 @@ const Details = () => {
         const accomProducts = desserts.find(getProductsById)
         return (
             <>
-                <CardGroup>
-                    <Card className='default-card'>
-                        <Card.Img variant="top" src={accomProducts.Image} />
-                        <Card.Body>
-                            <Card.Title>{accomProducts.Nom}</Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            {accomProducts.Prix}
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
-
+                <Container>
+                    <Row>
+                        <Col>
+                            <Image className='img-details' fluid src={accomProducts.Image} />
+                        </Col>
+                        <Col>
+                            <Card.Body className='text-details'>
+                                <Card.Title>{accomProducts.Nom}</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                Prix : {accomProducts.Prix}
+                            </Card.Footer>
+                        </Col>
+                    </Row>
+                </Container>
             </>
         )
 
