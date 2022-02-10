@@ -15,7 +15,7 @@ const Modals = ({ show, id, type, onHide }) => {
     let product = ""
     if (type === "menus") {
         product = menu.find(getProductsById)
-    } else if (type === "burger") {
+    } else if (type === "burgers") {
         product = burger.find(getProductsById)
     } else if (type === "accompagnements") {
         product = desserts.find(getProductsById)
@@ -25,21 +25,27 @@ const Modals = ({ show, id, type, onHide }) => {
     return (
         <>
             <Modal
-                show = {show}
+                show={show}
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
+                onHide={onHide}
             >
+
                 <Modal.Header closeButton>
-                    <Image className='img-details' fluid src={product.Image} />
                     <Modal.Title id="contained-modal-title-vcenter">
                         {product.Nom}
                     </Modal.Title>
                 </Modal.Header>
+                <Image className='img-details' fluid src={product.Image} />
                 <Modal.Body>
                     {product.Ingredients && <span>Composition : {product.Ingredients}</span>}
-                    {product.Boissons && <span>Boissons : {product.Boissons}</span>}
+                </Modal.Body>
+                <Modal.Body>
                     {product.Sauce && <span>Sauces : {product.Sauce} </span>}
+                </Modal.Body>
+                <Modal.Body>
+                    {product.Boissons && <span>Boissons : {product.Boissons}</span>}
                 </Modal.Body>
                 <Modal.Footer>
                     Prix : {product.Prix}
