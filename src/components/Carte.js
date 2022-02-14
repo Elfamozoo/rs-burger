@@ -25,13 +25,13 @@ const Carte = () => {
                 <Row xs={1} md={1}>
                     <Nav fill defaultActiveKey="link-1">
                         <Nav.Item>
-                            <Nav.Link href='#menu' eventKey="link-1" >Menus burgers/wraps</Nav.Link>
+                            <Nav.Link className="onglets" href='#menu' eventKey="link-1" >Menus burgers/wraps</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='#burger' eventKey="link-2">Burger/Wraps</Nav.Link>
+                            <Nav.Link className="onglets" href='#burger' eventKey="link-2">Burger/Wraps</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='#accom' eventKey="link-3" >Accompagnements</Nav.Link>
+                            <Nav.Link className="onglets" href='#accom' eventKey="link-3" >Accompagnements</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Row>

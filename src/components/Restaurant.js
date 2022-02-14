@@ -47,7 +47,8 @@ class Restaurant extends React.Component {
                         Dans un cadre très décontracté...</p>
                     <Image className="mx-auto d-block" fluid src={rsburger}></Image>
                     <h3 className='descriptionH2'>Livraison possible à partir de 15 euros</h3>
-                    <h4 className='descriptionH2'>Tel : 03.74.67.20.39 / 06.12.13.86.07</h4>
+                    <h4 className='descriptionH2'><a className='telephone' href='tel:0374672039'>Fixe : 03.74.67.20.39</a></h4>
+                    <h4 className='descriptionH2'><a className='telephone' href='tel:0612138607'>Mobile : 06.12.13.86.07</a></h4>
 
                     <div className="google-map">
                         <iframe title="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.4007306551175!2d3.065083387733846!3d50.60963599385257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a5e389e5b1a4036!2sRS%20Burger!5e0!3m2!1sfr!2sfr!4v1642083753686!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
