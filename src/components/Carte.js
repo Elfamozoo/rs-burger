@@ -54,12 +54,12 @@ const Carte = () => {
                                 <Card className='default-card'>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title className="titre-card">{products.Nom}</Card.Title>
+                                        <Card.Text className="corps-card">
                                             {products.Ingredients}
                                         </Card.Text>
                                     </Card.Body>
-                                    <Card.Footer>
+                                    <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
                                 </Card>
@@ -86,12 +86,12 @@ const Carte = () => {
                                 <Card className='default-card' >
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title className="titre-card">{products.Nom}</Card.Title>
+                                        <Card.Text className="corps-card">
                                             {products.Ingredients}
                                         </Card.Text>
                                     </Card.Body>
-                                    <Card.Footer>
+                                    <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
                                 </Card>
@@ -117,12 +117,9 @@ const Carte = () => {
                                 <Card className='default-card'>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
-                                        <Card.Title>{products.Nom}</Card.Title>
-                                        <Card.Text>
-                                            {products.Ingredients}
-                                        </Card.Text>
+                                        <Card.Title className="titre-card">{products.Nom}</Card.Title>
                                     </Card.Body>
-                                    <Card.Footer>
+                                    <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
                                 </Card>

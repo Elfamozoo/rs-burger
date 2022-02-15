@@ -33,21 +33,21 @@ const Modals = ({ show, id, type, onHide }) => {
             >
 
                 <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
+                    <Modal.Title className="titre-modal" id="contained-modal-title-vcenter">
                         {product.Nom}
                     </Modal.Title>
                 </Modal.Header>
-                <Image className='img-details' fluid src={product.Image} />
-                <Modal.Body>
+                <Image className='img-modal' fluid src={product.Image} />
+                <Modal.Body className="corps-modal">
                     {product.Ingredients && <span>Composition : {product.Ingredients}</span>}
                 </Modal.Body>
-                <Modal.Body>
+                <Modal.Body className="corps-modal">
                     {product.Sauce && <span>Sauces : {product.Sauce} </span>}
                 </Modal.Body>
-                <Modal.Body>
+                <Modal.Body className="corps-modal">
                     {product.Boissons && <span>Boissons : {product.Boissons}</span>}
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="footer-modal">
                     Prix : {product.Prix}
                 </Modal.Footer>
             </Modal>

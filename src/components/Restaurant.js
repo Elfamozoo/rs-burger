@@ -46,7 +46,7 @@ class Restaurant extends React.Component {
                     <p className='descriptionP'>Venez déguster nos excellents burgers !
                         Dans un cadre très décontracté...</p>
                     <Image className="mx-auto d-block" fluid src={rsburger}></Image>
-                    <h3 className='descriptionH2'>Livraison possible à partir de 15 euros</h3>
+                    <h3 className='descriptionH1'>Livraison possible à partir de 15 euros</h3>
                     <h4 className='descriptionH2'><a className='telephone' href='tel:0374672039'>Fixe : 03.74.67.20.39</a></h4>
                     <h4 className='descriptionH2'><a className='telephone' href='tel:0612138607'>Mobile : 06.12.13.86.07</a></h4>
 
