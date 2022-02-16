@@ -10,7 +10,7 @@ const Navibar = () => {
 
     return (
         <>
-            <Navbar sticky='top' bg="dark" variant="dark" expand={false}>
+            <Navbar className='navbar' sticky='top' bg="dark" variant="dark" expand={false}>
                 <Container fluid>
                     <Navbar.Brand href="/">
                         <img
