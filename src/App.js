@@ -5,6 +5,7 @@ import Accueil from './components/Accueil';
 import Navibar from "./components/Navbar";
 import Restaurant from './components/Restaurant';
 import Carte from './components/Carte';
+import FooterRS from "./components/Footer";
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/restaurant" element={<Restaurant />}></Route>
         <Route path="/carte" element={<Carte />}></Route>
       </Routes>
+      <FooterRS />
     </Router>
   );
 }
