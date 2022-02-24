@@ -36,7 +36,12 @@ const FooterRS = () => {
                             <img src={rsburger} alt="Rsburger" />
                         ),
                         title: 'RS Burger',
-                        description: '2018-2022',
+                        items: [
+                            {
+                                title: `© 2018 / ${new Date().getFullYear()} - RS Burger - Mentions légales`
+
+                            },
+                        ],
                     },
                 ]}
                 bottom="Développé et designé par Zerga Illyes."

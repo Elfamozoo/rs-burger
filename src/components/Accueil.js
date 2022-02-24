@@ -19,7 +19,7 @@ class Accueil extends React.Component {
             <img
               className="d-block w-100"
               style={{}}
-              src={indien}
+              src={montagnard}
               alt="First slide"
             />
             <Carousel.Caption style={{
@@ -78,7 +78,7 @@ class Accueil extends React.Component {
                 Le montagnard
               </Card.Text>
             </Card.Body>
-            <Card.Img src={montagnard} />
+            <Card.Img src={indien} />
           </Card>
         </Row>
       </>
