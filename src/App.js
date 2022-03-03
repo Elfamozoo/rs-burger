@@ -15,7 +15,7 @@ import FooterRS from "./components/Footer";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/rs-burger">
       <Navibar />
       <Routes>
         <Route path="/" element={<Accueil />}></Route>
