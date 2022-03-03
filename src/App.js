@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles/App.scss";
 import Accueil from './components/Accueil';
 import Navibar from "./components/Navbar";
@@ -15,7 +15,7 @@ import FooterRS from "./components/Footer";
 
 const App = () => {
   return (
-    <Router basename="/rs-burger">
+    <Router>
       <Navibar />
       <Routes>
         <Route path="/" element={<Accueil />}></Route>
