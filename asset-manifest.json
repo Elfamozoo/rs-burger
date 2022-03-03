@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Elfamozoo/rs-burger/static/css/main.d2c75142.css",
-    "main.js": "/Elfamozoo/rs-burger/static/js/main.469d813e.js",
-    "static/media/rsburgermap5.png": "/Elfamozoo/rs-burger/static/media/rsburgermap5.943f7dd909cd9e597da9.png",
-    "static/media/montagnard.jpg": "/Elfamozoo/rs-burger/static/media/montagnard.7dd071f88ed59a68bb50.jpg",
-    "static/media/espagnol.jpg": "/Elfamozoo/rs-burger/static/media/espagnol.c265bc26099225fb7b36.jpg",
-    "static/media/RobotoCondensed-Italic.ttf": "/Elfamozoo/rs-burger/static/media/RobotoCondensed-Italic.aca8cfe6a0fd2abecaa6.ttf",
-    "static/media/RobotoCondensed-Regular.ttf": "/Elfamozoo/rs-burger/static/media/RobotoCondensed-Regular.db6d916952fb988edac1.ttf",
-    "static/media/RobotoCondensed-Bold.ttf": "/Elfamozoo/rs-burger/static/media/RobotoCondensed-Bold.89a396525c0de98da365.ttf",
-    "static/media/chicken.jpg": "/Elfamozoo/rs-burger/static/media/chicken.11d57ef216cfe538f9ea.jpg",
-    "static/media/indien.jpg": "/Elfamozoo/rs-burger/static/media/indien.6d4c43f343eec5388bb3.jpg",
-    "static/media/normand.jpg": "/Elfamozoo/rs-burger/static/media/normand.dfb67e371497aa2cffd7.jpg",
-    "static/media/logo-google.png": "/Elfamozoo/rs-burger/static/media/logo-google.23d7e8b37501e99225c2.png",
-    "static/media/Just-Eat-Logo.png": "/Elfamozoo/rs-burger/static/media/Just-Eat-Logo.fa5b27119162f1ee3656.png",
-    "index.html": "/Elfamozoo/rs-burger/index.html",
-    "main.d2c75142.css.map": "/Elfamozoo/rs-burger/static/css/main.d2c75142.css.map",
-    "main.469d813e.js.map": "/Elfamozoo/rs-burger/static/js/main.469d813e.js.map"
+    "main.css": "/rs-burger/static/css/main.a9ba636a.css",
+    "main.js": "/rs-burger/static/js/main.bcd7fe39.js",
+    "static/media/rsburgermap5.png": "/rs-burger/static/media/rsburgermap5.943f7dd909cd9e597da9.png",
+    "static/media/montagnard.jpg": "/rs-burger/static/media/montagnard.7dd071f88ed59a68bb50.jpg",
+    "static/media/espagnol.jpg": "/rs-burger/static/media/espagnol.c265bc26099225fb7b36.jpg",
+    "static/media/RobotoCondensed-Italic.ttf": "/rs-burger/static/media/RobotoCondensed-Italic.aca8cfe6a0fd2abecaa6.ttf",
+    "static/media/RobotoCondensed-Regular.ttf": "/rs-burger/static/media/RobotoCondensed-Regular.db6d916952fb988edac1.ttf",
+    "static/media/RobotoCondensed-Bold.ttf": "/rs-burger/static/media/RobotoCondensed-Bold.89a396525c0de98da365.ttf",
+    "static/media/chicken.jpg": "/rs-burger/static/media/chicken.11d57ef216cfe538f9ea.jpg",
+    "static/media/indien.jpg": "/rs-burger/static/media/indien.6d4c43f343eec5388bb3.jpg",
+    "static/media/normand.jpg": "/rs-burger/static/media/normand.dfb67e371497aa2cffd7.jpg",
+    "static/media/logo-google.png": "/rs-burger/static/media/logo-google.23d7e8b37501e99225c2.png",
+    "static/media/Just-Eat-Logo.png": "/rs-burger/static/media/Just-Eat-Logo.fa5b27119162f1ee3656.png",
+    "index.html": "/rs-burger/index.html",
+    "main.a9ba636a.css.map": "/rs-burger/static/css/main.a9ba636a.css.map",
+    "main.bcd7fe39.js.map": "/rs-burger/static/js/main.bcd7fe39.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2c75142.css",
-    "static/js/main.469d813e.js"
+    "static/css/main.a9ba636a.css",
+    "static/js/main.bcd7fe39.js"
   ]
 }
