@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rs-burger/static/css/main.a9ba636a.css",
-    "main.js": "/rs-burger/static/js/main.d10987f6.js",
+    "main.css": "/rs-burger/static/css/main.4aa247b7.css",
+    "main.js": "/rs-burger/static/js/main.f17cf8d8.js",
     "static/media/rsburgermap5.png": "/rs-burger/static/media/rsburgermap5.943f7dd909cd9e597da9.png",
     "static/media/montagnard.jpg": "/rs-burger/static/media/montagnard.7dd071f88ed59a68bb50.jpg",
     "static/media/espagnol.jpg": "/rs-burger/static/media/espagnol.c265bc26099225fb7b36.jpg",
@@ -14,11 +14,11 @@
     "static/media/logo-google.png": "/rs-burger/static/media/logo-google.23d7e8b37501e99225c2.png",
     "static/media/Just-Eat-Logo.png": "/rs-burger/static/media/Just-Eat-Logo.fa5b27119162f1ee3656.png",
     "index.html": "/rs-burger/index.html",
-    "main.a9ba636a.css.map": "/rs-burger/static/css/main.a9ba636a.css.map",
-    "main.d10987f6.js.map": "/rs-burger/static/js/main.d10987f6.js.map"
+    "main.4aa247b7.css.map": "/rs-burger/static/css/main.4aa247b7.css.map",
+    "main.f17cf8d8.js.map": "/rs-burger/static/js/main.f17cf8d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9ba636a.css",
-    "static/js/main.d10987f6.js"
+    "static/css/main.4aa247b7.css",
+    "static/js/main.f17cf8d8.js"
   ]
 }
