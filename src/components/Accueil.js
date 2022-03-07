@@ -30,7 +30,7 @@ class Accueil extends React.Component {
             }}>
               <div className="titreCarousel">
                 <Image style={{ maxHeight: "80px" }} fluid src={rsburger}></Image>
-                <Link style={{ color: "white" }} href="carte"><h1>Decouvrez la carte en cliquant ici !</h1></Link>
+                <Link style={{ color: "white" }} to="carte"><h1>Decouvrez la carte en cliquant ici !</h1></Link>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
