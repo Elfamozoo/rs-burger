@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Card, CardGroup, Container, Row, Button, Col, Nav, Modal } from 'react-bootstrap'
 import "../styles/Carte.scss";
 import menu from '../data/menu-burger.json'
@@ -25,13 +25,13 @@ const Carte = () => {
                 <Row xs={1} md={1}>
                     <Nav fill defaultActiveKey="link-1">
                         <Nav.Item>
-                            <Nav.Link className="onglets" href='#menu' eventKey="link-1" >Menus burgers/wraps</Nav.Link>
+                            <Link className="onglets" to='#menu' >Menus burgers/wraps</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="onglets" href='#burger' eventKey="link-2">Burger/Wraps</Nav.Link>
+                            <Link className="onglets" to='#burger'>Burger/Wraps</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="onglets" href='#accom' eventKey="link-3" >Accompagnements</Nav.Link>
+                            <Link className="onglets" to='#accom' >Accompagnements</Link>
                         </Nav.Item>
                     </Nav>
                 </Row>
