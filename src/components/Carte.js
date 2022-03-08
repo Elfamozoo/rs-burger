@@ -1,17 +1,58 @@
 import React, { useState } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import { Card, CardGroup, Container, Row, Button, Col, Nav, Modal } from 'react-bootstrap'
-import "../styles/Carte.scss";
-import menu from '../data/menu-burger.json'
-import burger from '../data/Burger.json'
-import desserts from '../data/accompagnements.json'
-import ScrollTop from "react-scrolltop-button";
+import { Card, CardGroup, Container, Row, Button, Col, Nav, Modal, Placeholder } from 'react-bootstrap'
 import Modals from "./Modals";
+import ScrollTop from "react-scrolltop-button";
+import "../styles/Carte.scss";
+import { useQuery } from 'react-query'
+import axios from "axios"
+
+
+
 
 const Carte = () => {
     const [modalShow, setModalShow] = useState(false);
     const [id, setId] = useState(0)
     const [type, setType] = useState("")
+    const [selectedProduct, setSelectedProduct] = useState({})
+
+
+    const fetchListCarte = () => {
+        return axios.get('https://api.steinhq.com/v1/storages/6226806a4906bb053730b117/Carte')
+    }
+
+
+    const { isLoading, data: sheet, isError, error } = useQuery(
+        'Carte',
+        fetchListCarte,
+        {
+            refetchOnWindowFocus: false,
+            refetchOnMount: false
+        },
+    )
+
+    let menu = []
+    let burger = []
+    let desserts = []
+
+    sheet?.data.forEach((product) => {
+        if (product.Boissons) {
+            menu.push(product)
+
+        } else if (product.Ingredients) {
+            burger.push(product)
+        } else {
+            desserts.push(product)
+        }
+
+        console.log(menu)
+
+    })
+
+
+
+
+
 
     return (
         <>
@@ -20,6 +61,7 @@ const Carte = () => {
                 id={id}
                 type={type}
                 onHide={() => setModalShow(false)}
+                product={selectedProduct}
             />
             <Container>
                 <Row xs={1} md={1}>
@@ -35,6 +77,9 @@ const Carte = () => {
                         </Nav.Item>
                     </Nav>
                 </Row>
+
+
+
                 <Row xs={1} md={3}>
                     <Card.Body id='menu'>
                         <Card.Title>
@@ -49,9 +94,16 @@ const Carte = () => {
                                 setId(products.Id)
                                 setType("menus")
                                 setModalShow(true)
+                                setSelectedProduct(products)
                             }}>
                             <CardGroup>
-                                <Card className='default-card'>
+                                {isLoading ? <> <Placeholder as={Card.Title} animation="glow">
+                                    <Placeholder xs={6} />
+                                </Placeholder>
+                                    <Placeholder as={Card.Text} animation="glow">
+                                        <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
+                                        <Placeholder xs={6} /> <Placeholder xs={8} />
+                                    </Placeholder></> : <Card className='default-card'>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title className="titre-card">{products.Nom}</Card.Title>
@@ -62,7 +114,7 @@ const Carte = () => {
                                     <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
-                                </Card>
+                                </Card>}
                             </CardGroup>
                         </div>
                     )}
@@ -81,6 +133,7 @@ const Carte = () => {
                             setId(products.Id)
                             setType("burgers")
                             setModalShow(true)
+                            setSelectedProduct(products)
                         }}>
                             <CardGroup>
                                 <Card className='default-card' >
@@ -112,6 +165,7 @@ const Carte = () => {
                             setId(products.Id)
                             setType("accompagnements")
                             setModalShow(true)
+                            setSelectedProduct(products)
                         }}>
                             <CardGroup>
                                 <Card className='default-card'>

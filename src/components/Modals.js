@@ -2,24 +2,9 @@ import React, { useState } from "react";
 import "../styles/Modals.scss";
 import { Container, Row, Button, Col, Image, Modal } from 'react-bootstrap'
 import Carte from "./Carte";
-import menu from '../data/menu-burger.json'
-import burger from '../data/Burger.json'
-import desserts from '../data/accompagnements.json'
 
-const Modals = ({ show, id, type, onHide }) => {
+const Modals = ({ show, id, type, onHide, product }) => {
 
-    function getProductsById(product) {
-        return product.Id === id
-    }
-
-    let product = ""
-    if (type === "menus") {
-        product = menu.find(getProductsById)
-    } else if (type === "burgers") {
-        product = burger.find(getProductsById)
-    } else if (type === "accompagnements") {
-        product = desserts.find(getProductsById)
-    }
 
 
     return (
