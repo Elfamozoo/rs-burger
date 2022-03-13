@@ -8,6 +8,7 @@ import Carte from './components/Carte';
 import FooterRS from "./components/Footer";
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import Wrapper from 'scroll-restoration-r6'
 
 const queryClient = new QueryClient();
 
@@ -17,14 +18,16 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <Navibar />
-        <Routes>
-          <Route path="/" element={<Accueil />}></Route>
-          <Route path="/restaurant" element={<Restaurant />}></Route>
-          <Route path="/carte" element={<Carte />}></Route>
-        </Routes>
-        <FooterRS />
-        <ReactQueryDevtools initialIsOpen={false} />
+        <Wrapper>
+          <Navibar />
+          <Routes>
+            <Route path="/" element={<Accueil />}></Route>
+            <Route path="/restaurant" element={<Restaurant />}></Route>
+            <Route path="/carte" element={<Carte />}></Route>
+          </Routes>
+          <FooterRS />
+          <ReactQueryDevtools initialIsOpen={false} />
+        </Wrapper>
       </Router>
     </QueryClientProvider>
   );
