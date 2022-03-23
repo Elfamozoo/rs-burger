@@ -8,19 +8,15 @@ import { useQuery } from 'react-query'
 import axios from "axios"
 
 
-
-
 const Carte = () => {
     const [modalShow, setModalShow] = useState(false);
     const [id, setId] = useState(0)
     const [type, setType] = useState("")
     const [selectedProduct, setSelectedProduct] = useState({})
 
-
     const fetchListCarte = () => {
         return axios.get('https://api.steinhq.com/v1/storages/6226806a4906bb053730b117/Carte')
     }
-
 
     const { isLoading, data: sheet, isError, error } = useQuery(
         'Carte',
@@ -44,15 +40,7 @@ const Carte = () => {
         } else {
             desserts.push(product)
         }
-
-        console.log(menu)
-
     })
-
-
-
-
-
 
     return (
         <>
@@ -78,8 +66,6 @@ const Carte = () => {
                     </Nav>
                 </Row>
 
-
-
                 <Row xs={1} md={3}>
                     <Card.Body id='menu'>
                         <Card.Title>
@@ -96,14 +82,24 @@ const Carte = () => {
                                 setModalShow(true)
                                 setSelectedProduct(products)
                             }}>
-                            <CardGroup>
-                                {isLoading ? <> <Placeholder as={Card.Title} animation="glow">
-                                    <Placeholder xs={6} />
-                                </Placeholder>
-                                    <Placeholder as={Card.Text} animation="glow">
-                                        <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
-                                        <Placeholder xs={6} /> <Placeholder xs={8} />
-                                    </Placeholder></> : <Card className='default-card'>
+                            {isLoading ? <CardGroup>
+                                <Card>
+                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                    <Card.Body>
+                                        <Placeholder as={Card.Title} animation="glow">
+                                            <Placeholder xs={6} />
+                                        </Placeholder>
+                                        <Placeholder as={Card.Text} animation="glow">
+                                            <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
+                                            <Placeholder xs={6} /> <Placeholder xs={8} />
+                                        </Placeholder>
+                                    </Card.Body>
+                                    <Placeholder as={Card.Footer} animation="glow">
+                                        <Placeholder xs={6} />
+                                    </Placeholder>
+                                </Card>
+                            </CardGroup> : <CardGroup>
+                                <Card className='default-card'>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title className="titre-card">{products.Nom}</Card.Title>
@@ -114,8 +110,9 @@ const Carte = () => {
                                     <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
-                                </Card>}
+                                </Card>
                             </CardGroup>
+                            }
                         </div>
                     )}
                 </Row>
@@ -152,6 +149,7 @@ const Carte = () => {
                         </div>
                     )}
                 </Row>
+
                 <Row xs={1} md={3} className="g-0">
                     <Card.Body id='accom'>
                         <Card.Title>
@@ -179,7 +177,6 @@ const Carte = () => {
                                 </Card>
                             </CardGroup>
                         </div>
-
                     )}
                 </Row>
                 <ScrollTop breakpoint="5000" />
@@ -189,5 +186,3 @@ const Carte = () => {
 }
 
 export default Carte;
-
-

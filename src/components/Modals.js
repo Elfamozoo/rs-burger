@@ -5,8 +5,6 @@ import Carte from "./Carte";
 
 const Modals = ({ show, id, type, onHide, product }) => {
 
-
-
     return (
         <>
             <Modal
@@ -16,7 +14,6 @@ const Modals = ({ show, id, type, onHide, product }) => {
                 centered
                 onHide={onHide}
             >
-
                 <Modal.Header closeButton>
                     <Modal.Title className="titre-modal" id="contained-modal-title-vcenter">
                         {product.Nom}

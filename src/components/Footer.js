@@ -6,11 +6,8 @@ import rsburger from '../assets/rsburger.png'
 import { Button, Modal } from 'react-bootstrap'
 
 
-
-
 const FooterRS = () => {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -53,8 +50,6 @@ const FooterRS = () => {
                 bottom="Développé et designé par Zerga Illyes." 
             />
 
-
-
             <Modal
                 show={show}
                 onHide={handleClose}
@@ -88,22 +83,9 @@ const FooterRS = () => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-
         </>
     )
 
-
-
-
-
-
-
-
-
-
-
 }
-
-
 
 export default FooterRS;

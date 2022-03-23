@@ -10,7 +10,6 @@ import rsburger from '../assets/rsburger.png'
 import { Link } from 'react-router-dom';
 
 
-
 class Accueil extends React.Component {
 
   render() {
@@ -73,10 +72,7 @@ class Accueil extends React.Component {
         </Carousel>
       </>
     );
-
   }
 }
 
 export default Accueil;
-
-

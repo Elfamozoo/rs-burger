@@ -5,8 +5,6 @@ import rsburger from '../assets/rsburger.png'
 import Accueil from './Accueil';
 import { Link } from 'react-router-dom';
 
-
-
 const Navibar = () => {
 
     const [show, setShow] = useState(false);
@@ -52,4 +50,3 @@ const Navibar = () => {
 };
 
 export default Navibar;
-
