@@ -1,11 +1,9 @@
 import React from "react";
 import { Carousel, Card, Container, Row, Col, Image } from 'react-bootstrap'
 import "../styles/App.scss";
-import indien from '../assets/indien.jpg'
+import americain from '../assets/americain.jpg'
 import chicken from '../assets/chicken.jpg'
 import espagnol from '../assets/espagnol.jpg'
-import normand from '../assets/normand.jpg'
-import montagnard from '../assets/montagnard.jpg'
 import rsburger from '../assets/rsburger.png'
 import { Link } from 'react-router-dom';
 
@@ -19,7 +17,7 @@ class Accueil extends React.Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={montagnard}
+              src={americain}
               alt="First slide"
             />
             <Carousel.Caption style={{
