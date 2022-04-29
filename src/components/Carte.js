@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import { Card, CardGroup, Container, Row, Nav, Placeholder } from 'react-bootstrap'
+import { Card, CardGroup, Container, Row, Nav } from 'react-bootstrap'
 import Modals from "./Modals";
 import ScrollTop from "react-scrolltop-button";
 import "../styles/Carte.scss";
@@ -14,7 +14,6 @@ const Carte = () => {
     const [modalShow, setModalShow] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({})
 
-
     const fetchListCarte = () => {
         return axios.get('https://api.steinhq.com/v1/storages/6226806a4906bb053730b117/Carte')
     }
@@ -27,7 +26,6 @@ const Carte = () => {
             refetchOnMount: false
         },
     )
-
 
     let menu = []
     let burger = []
@@ -43,12 +41,7 @@ const Carte = () => {
         } else {
             desserts.push(product)
         }
-
-        console.log(menu)
-
     })
-
-
 
     return (
         <>
@@ -73,7 +66,6 @@ const Carte = () => {
                 </Row>
 
 
-
                 <Row xs={1} md={3}>
                     <Card.Body id='menu'>
                         <Card.Title>
@@ -89,13 +81,7 @@ const Carte = () => {
                                 setSelectedProduct(products)
                             }}>
                             <CardGroup>
-                                {isLoading ? <> <Placeholder as={Card.Title} animation="glow">
-                                    <Placeholder xs={6} />
-                                </Placeholder>
-                                    <Placeholder as={Card.Text} animation="glow">
-                                        <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
-                                        <Placeholder xs={6} /> <Placeholder xs={8} />
-                                    </Placeholder></> : <Card className='default-card'>
+                                <Card className='default-card'>
                                     <Card.Img variant="top" src={products.Image} />
                                     <Card.Body>
                                         <Card.Title className="titre-card">{products.Nom}</Card.Title>
@@ -106,7 +92,7 @@ const Carte = () => {
                                     <Card.Footer className="footer-card">
                                         {products.Prix}
                                     </Card.Footer>
-                                </Card>}
+                                </Card>
                             </CardGroup>
                         </div>
                     )}
@@ -177,5 +163,3 @@ const Carte = () => {
 }
 
 export default Carte;
-
-
