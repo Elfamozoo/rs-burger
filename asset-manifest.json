@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rs-burger/static/css/main.749104fa.css",
-    "main.js": "/rs-burger/static/js/main.40750579.js",
+    "main.js": "/rs-burger/static/js/main.e5d97c27.js",
     "static/media/rsburgermap5.png": "/rs-burger/static/media/rsburgermap5.943f7dd909cd9e597da9.png",
     "static/media/RobotoCondensed-Italic.ttf": "/rs-burger/static/media/RobotoCondensed-Italic.aca8cfe6a0fd2abecaa6.ttf",
     "static/media/RobotoCondensed-Regular.ttf": "/rs-burger/static/media/RobotoCondensed-Regular.db6d916952fb988edac1.ttf",
@@ -13,10 +13,10 @@
     "static/media/Just-Eat-Logo.png": "/rs-burger/static/media/Just-Eat-Logo.fa5b27119162f1ee3656.png",
     "index.html": "/rs-burger/index.html",
     "main.749104fa.css.map": "/rs-burger/static/css/main.749104fa.css.map",
-    "main.40750579.js.map": "/rs-burger/static/js/main.40750579.js.map"
+    "main.e5d97c27.js.map": "/rs-burger/static/js/main.e5d97c27.js.map"
   },
   "entrypoints": [
     "static/css/main.749104fa.css",
-    "static/js/main.40750579.js"
+    "static/js/main.e5d97c27.js"
   ]
 }
