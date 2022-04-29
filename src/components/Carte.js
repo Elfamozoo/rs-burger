@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import { Card, CardGroup, Container, Row, Button, Col, Nav, Modal, Placeholder } from 'react-bootstrap'
+import { Card, CardGroup, Container, Row, Nav, Placeholder } from 'react-bootstrap'
 import Modals from "./Modals";
 import ScrollTop from "react-scrolltop-button";
 import "../styles/Carte.scss";
@@ -12,8 +12,6 @@ import axios from "axios"
 
 const Carte = () => {
     const [modalShow, setModalShow] = useState(false);
-    const [id, setId] = useState(0)
-    const [type, setType] = useState("")
     const [selectedProduct, setSelectedProduct] = useState({})
 
 
@@ -21,9 +19,7 @@ const Carte = () => {
         return axios.get('https://api.steinhq.com/v1/storages/6226806a4906bb053730b117/Carte')
     }
 
-
- /* It's a function that fetch the data from the API. */
-    const { isLoading, data: sheet, isError, error } = useQuery(
+    const { isLoading, data: sheet } = useQuery(
         'Carte',
         fetchListCarte,
         {
@@ -32,11 +28,12 @@ const Carte = () => {
         },
     )
 
+
     let menu = []
     let burger = []
     let desserts = []
 
-    /* It's a loop that push the products in the array. */
+
     sheet?.data.forEach((product) => {
         if (product.Boissons) {
             menu.push(product)
@@ -53,15 +50,10 @@ const Carte = () => {
 
 
 
-
-
-
     return (
         <>
             <Modals
                 show={modalShow}
-                id={id}
-                type={type}
                 onHide={() => setModalShow(false)}
                 product={selectedProduct}
             />
@@ -93,8 +85,6 @@ const Carte = () => {
                     {menu.map((products) =>
                         <div className='default-link'
                             onClick={() => {
-                                setId(products.Id)
-                                setType("menus")
                                 setModalShow(true)
                                 setSelectedProduct(products)
                             }}>
@@ -132,8 +122,6 @@ const Carte = () => {
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {burger.map((products) =>
                         <div className='default-link' onClick={() => {
-                            setId(products.Id)
-                            setType("burgers")
                             setModalShow(true)
                             setSelectedProduct(products)
                         }}>
@@ -164,8 +152,6 @@ const Carte = () => {
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {desserts.map((products) =>
                         <div className='default-link' onClick={() => {
-                            setId(products.Id)
-                            setType("accompagnements")
                             setModalShow(true)
                             setSelectedProduct(products)
                         }}>

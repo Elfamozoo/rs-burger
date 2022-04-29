@@ -12,8 +12,6 @@ import Wrapper from 'scroll-restoration-r6'
 
 const queryClient = new QueryClient();
 
-
-
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>

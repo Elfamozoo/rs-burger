@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Restaurant.scss";
-import { Card, Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import PrettyRating from "pretty-rating-react";
 import { faStar, faStarHalfAlt, } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
@@ -57,6 +57,6 @@ class Restaurant extends React.Component {
             </>
         );
     }
-};
+}
 
 export default Restaurant;

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Modals.scss";
-import { Container, Row, Button, Col, Image, Modal } from 'react-bootstrap'
-import Carte from "./Carte";
+import { Image, Modal } from 'react-bootstrap'
 
-const Modals = ({ show, id, type, onHide, product }) => {
+
+const Modals = ({ show, onHide, product }) => {
 
     return (
         <>

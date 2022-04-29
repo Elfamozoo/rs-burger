@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Card, Container, Row, Col, Image } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 import "../styles/App.scss";
 import americain from '../assets/americain.jpg'
 import chicken from '../assets/chicken.jpg'
