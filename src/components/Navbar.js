@@ -35,9 +35,9 @@ const Navibar = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body style={{ backgroundColor: "black" }}>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Link onClick={handleClose} className="nav-link" style={{ color: "white" }} to="">Accueil</Link>
-                                <Link onClick={handleClose} className="nav-link" style={{ color: "white" }} to="restaurant">Restaurant</Link>
-                                <Link onClick={handleClose} className="nav-link" style={{ color: "white" }} to="carte">Carte</Link>
+                                <Link onClick={handleClose} data-testid="link-accueil" className="nav-link" style={{ color: "white" }} to="">Accueil</Link>
+                                <Link onClick={handleClose} data-testid="link-resto" className="nav-link" style={{ color: "white" }} to="restaurant">Restaurant</Link>
+                                <Link onClick={handleClose} data-testid="link-carte" className="nav-link" style={{ color: "white" }} to="carte">Carte</Link>
                                 <Nav.Link style={{ color: "white" }} href="https://www.just-eat.fr/menu/rs-burger">Commander</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
