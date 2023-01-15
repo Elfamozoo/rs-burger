@@ -23,14 +23,14 @@ const Navibar = () => {
                             style={{ marginLeft: "15px" }}
                             className="d-inline-block align-top" />
                     </Link>
-                    <Navbar.Toggle onClick={handleShow} aria-controls="offcanvasNavbar"/>
+                    <Navbar.Toggle data-testid="menu-burger-open" onClick={handleShow} aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel"
                         placement="end"
                         show={show} onHide={handleClose}
                     >
-                        <Offcanvas.Header style={{ backgroundColor: "black" }} closeButton closeVariant='white'>
+                        <Offcanvas.Header data-testid="menu-burger-close" style={{ backgroundColor: "black" }} closeButton closeVariant='white'>
                             <Offcanvas.Title style={{ color: "white" }} id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body style={{ backgroundColor: "black" }}>
